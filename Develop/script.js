@@ -14,10 +14,10 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-function promptMe(){
-    var generateBtn = prompt("Please choose from the following password criteria:");
+console.log(generateBtn);
 
 // Write password to the #password input
+
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -26,5 +26,33 @@ function writePassword() {
 
 }
 
+function generatePassword() {
+  var initialPrompt = window.prompt("Please choose a length for your password between 8 and 128 characters.");
+  console.log(initialPrompt);
+  if( !initialPrompt){
+        return;
+  } 
+  else {
+    console.log(typeof initialPrompt);
+    var attemptedNumber = parseInt(initialPrompt);
+    console.log(attemptedNumber);
+    console.log(typeof attemptedNumber);
+    if(attemptedNumber !== NaN && attemptedNumber > 7 && attemptedNumber < 129) {
+      console.log("we got a good number!")
+      var lowerCase = window.prompt("Do you want any lowercase characters? (y or n)");
+      if( !lowerCase){
+          return;
+      } 
+      else {
+        if (lowerCase === "y" || lowerCase === "n") {
+        
+        }
+      }  
+} 
+  }
+
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
