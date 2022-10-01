@@ -45,10 +45,15 @@ function generatePassword() {
       } 
       else {
         if (lowerCase === "y" || lowerCase === "n") {
-        
+          // var upperCase = window.prompt ("Do you want any uppercase characters? (y or n)");
+          // if (!upperCase){
+          //   return;
+          // } 
+          // else {
+
         }
       }  
-} 
+    } 
   }
 
 }

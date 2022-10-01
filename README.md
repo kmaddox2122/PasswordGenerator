@@ -6,7 +6,7 @@ https://kmaddox2122.github.io/PasswordGenerator/
 
 #### Here is a preview:
 
-![Alt text](assets/03-javascript-homework-demo.png?raw=true "Screenshot")
+![Alt text](Assets/03-javascript-homework-demo.png?raw=true "Screenshot")
 
 
 #### Main Take-away: Updated codebase in order to write JavaScript to create a random password generator.
